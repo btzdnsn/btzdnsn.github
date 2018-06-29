@@ -5,10 +5,12 @@ block content
   .col-md-4.col-md-offset-4
     h2 Log in
     div= error
+    div 
+     a(href='/auth/twitter') Sign in with Twitter
     div
       form(action="/login", method="POST")
         p
-          input.form-control(name="email", type="text", placeholder="hi@node.university")
+          input.form-control(name="email", type="text", placeholder="hi@azat.co")
         p
           input.form-control(name="password", type="password", placeholder="***")
         p
